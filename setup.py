@@ -22,7 +22,7 @@ def load_links_from_file(filepath):
 
 
 setuptools.setup(
-    name="ejhelper",
+    name="sungonTest",
     version="0.0.1",
     author="sungon",
     author_email="sungon.lee@encored.co.jp",
@@ -38,5 +38,3 @@ setuptools.setup(
     include_package_data=True,
     python_requires=">=3.7",
 )
-
-git+https://github.com/encoredjapan/encored-helper-py.git#egg=ejhelper
