@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sungonTest
+Version: 0.0.9
+Summary: ejhelper is lib for encored japan development
+Home-page: https://github.com/sungonlee/package-management
+Author: sungon
+Author-email: sungon.lee@encored.co.jp
+License: UNKNOWN
+Download-URL: https://github.com/sungonlee/package-management/blob/main/dist/sungonTest-0.0.5.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+UNKNOWN
+

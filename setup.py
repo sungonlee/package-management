@@ -1,4 +1,5 @@
 import setuptools
+from pymysql import connect, Connection, cursors
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -25,7 +26,7 @@ def load_links_from_file(filepath):
 
 setuptools.setup(
     name="sungonTest",
-    version="0.0.8",
+    version="0.0.9",
     author="sungon",
     author_email="sungon.lee@encored.co.jp",
     description="ejhelper is lib for encored japan development",
@@ -38,8 +39,8 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    package_dir={"pymysql": "src/PyMySQL-1.0.2/pymysql"},
+    packages=['pymysql'],
     include_package_data=True,
     python_requires=">=3.7",
 )
