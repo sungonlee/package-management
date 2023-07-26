@@ -23,7 +23,7 @@ def load_links_from_file(filepath):
 
 setuptools.setup(
     name="sungonTest",
-    version="0.0.1",
+    version="0.0.2",
     author="sungon",
     author_email="sungon.lee@encored.co.jp",
     description="ejhelper is lib for encored japan development",
