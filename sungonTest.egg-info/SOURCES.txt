@@ -1,8 +1,5 @@
 README.md
 setup.py
-src/PyMySQL-1.0.2/__init__.py
-src/PyMySQL-1.0.2/example.py
-src/PyMySQL-1.0.2/setup.py
 src/PyMySQL-1.0.2/pymysql/__init__.py
 src/PyMySQL-1.0.2/pymysql/_auth.py
 src/PyMySQL-1.0.2/pymysql/charset.py

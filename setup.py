@@ -25,7 +25,7 @@ def load_links_from_file(filepath):
 
 setuptools.setup(
     name="sungonTest",
-    version="0.0.14",
+    version="0.0.15",
     author="sungon",
     author_email="sungon.lee@encored.co.jp",
     description="ejhelper is lib for encored japan development",
@@ -40,9 +40,7 @@ setuptools.setup(
     install_requires=load_requires_from_file("requirements.txt"),
     dependency_links=load_links_from_file("requirements.txt"),
     packages=['pymysql'],
-    package_dir={
-        'pymysql': 'src/PyMySQL-1.0.2',
-    },
-    package_data={'pymysql': ['pymysql/constants/*.py', 'pymysql/*.py']},
+    package_dir={'pymysql': 'src/PyMySQL-1.0.2/pymysql'},
+    package_data={'pymysql': ['constants/*.py', '*.py']},
     python_requires=">=3.7",
 )
