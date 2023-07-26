@@ -1,0 +1,5 @@
+setup.py
+src/ejhelper.egg-info/PKG-INFO
+src/ejhelper.egg-info/SOURCES.txt
+src/ejhelper.egg-info/dependency_links.txt
+src/ejhelper.egg-info/top_level.txt
