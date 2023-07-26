@@ -1,5 +1,4 @@
 import setuptools
-import pymysql
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -24,10 +23,9 @@ def load_links_from_file(filepath):
                 res.append(pkg_name.split(" ")[1])
     return res
 
-
 setuptools.setup(
     name="sungonTest",
-    version="0.0.7",
+    version="0.0.8",
     author="sungon",
     author_email="sungon.lee@encored.co.jp",
     description="ejhelper is lib for encored japan development",
@@ -41,7 +39,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
-    packages=[''],
+    packages=setuptools.find_packages(where="src"),
     include_package_data=True,
     python_requires=">=3.7",
 )
