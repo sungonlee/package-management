@@ -1,5 +1,8 @@
 README.md
 setup.py
+src/PyMySQL-1.0.2/__init__.py
+src/PyMySQL-1.0.2/example.py
+src/PyMySQL-1.0.2/setup.py
 src/PyMySQL-1.0.2/pymysql/__init__.py
 src/PyMySQL-1.0.2/pymysql/_auth.py
 src/PyMySQL-1.0.2/pymysql/charset.py
@@ -10,7 +13,16 @@ src/PyMySQL-1.0.2/pymysql/err.py
 src/PyMySQL-1.0.2/pymysql/optionfile.py
 src/PyMySQL-1.0.2/pymysql/protocol.py
 src/PyMySQL-1.0.2/pymysql/times.py
+src/PyMySQL-1.0.2/pymysql/constants/CLIENT.py
+src/PyMySQL-1.0.2/pymysql/constants/COMMAND.py
+src/PyMySQL-1.0.2/pymysql/constants/CR.py
+src/PyMySQL-1.0.2/pymysql/constants/ER.py
+src/PyMySQL-1.0.2/pymysql/constants/FIELD_TYPE.py
+src/PyMySQL-1.0.2/pymysql/constants/FLAG.py
+src/PyMySQL-1.0.2/pymysql/constants/SERVER_STATUS.py
+src/PyMySQL-1.0.2/pymysql/constants/__init__.py
 sungonTest.egg-info/PKG-INFO
 sungonTest.egg-info/SOURCES.txt
 sungonTest.egg-info/dependency_links.txt
+sungonTest.egg-info/requires.txt
 sungonTest.egg-info/top_level.txt

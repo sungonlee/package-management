@@ -1,5 +1,4 @@
 import setuptools
-from pymysql import connect, Connection, cursors
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -26,21 +25,24 @@ def load_links_from_file(filepath):
 
 setuptools.setup(
     name="sungonTest",
-    version="0.0.13",
+    version="0.0.14",
     author="sungon",
     author_email="sungon.lee@encored.co.jp",
     description="ejhelper is lib for encored japan development",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/sungonlee/package-management",
-    download_url='https://github.com/sungonlee/package-management/blob/main/dist/sungonTest-0.0.5.tar.gz',
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"pymysql": "src/PyMySQL-1.0.2/pymysql"},
-    packages=["pymysql"],
-    include_package_data=True,
+    install_requires=load_requires_from_file("requirements.txt"),
+    dependency_links=load_links_from_file("requirements.txt"),
+    packages=['pymysql'],
+    package_dir={
+        'pymysql': 'src/PyMySQL-1.0.2',
+    },
+    package_data={'pymysql': ['pymysql/constants/*.py', 'pymysql/*.py']},
     python_requires=">=3.7",
 )
