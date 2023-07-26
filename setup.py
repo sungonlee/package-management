@@ -26,13 +26,14 @@ def load_links_from_file(filepath):
 
 setuptools.setup(
     name="sungonTest",
-    version="0.0.4",
+    version="0.0.5",
     author="sungon",
     author_email="sungon.lee@encored.co.jp",
     description="ejhelper is lib for encored japan development",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/sungonlee/package-management.git",
+    url="https://github.com/sungonlee/package-management",
+    download_url='https://github.com/sungonlee/package-management/blob/main/dist/sungonTest-0.0.5.tar.gz',
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
