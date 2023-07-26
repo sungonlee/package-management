@@ -1,5 +1,8 @@
 import setuptools
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 def take_package_name(name):
     if name.startswith("-e"):
         return name[name.find("=")+1:name.rfind("-")]
@@ -23,11 +26,13 @@ def load_links_from_file(filepath):
 
 setuptools.setup(
     name="sungonTest",
-    version="0.0.2",
+    version="0.0.3",
     author="sungon",
     author_email="sungon.lee@encored.co.jp",
     description="ejhelper is lib for encored japan development",
-    url="https://encored.co.jp",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/sungonlee/package-management.git",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
